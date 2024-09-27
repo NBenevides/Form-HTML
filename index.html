@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Nickete</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        function MyClick()
+        {
+            let nome = document.getElementById("nome").value;
+            let idade = document.getElementById("idade").value;
+            let msg = "";
+            if (idade >= 18)
+            {
+                msg = "Maior de Idade: " + idade;
+            }
+            else
+            {
+                msg = "Menor de Idade: " + idade;
+            }
+            alert("Seu nome é: " + nome + ". Mensagem: " + msg);
+        }
+    </script>
+</head>
+<body>
+    <p id="titulo">Formulário</p>
+
+    <center>
+        <form class="cent">
+            <br>
+            <br>
+            <fieldset id="sep">
+                <legend>Identidades</legend>
+                <label for="nome">Nome</label>
+                <br>
+                <input type="text" id="nome" name="nome">
+                <br>
+                <br>
+                <label for="idade">Idade</label>
+                <br>
+                <input type="number" id="idade" name="idade">
+                <br>
+                <br>
+                <input type="button" value="Enviar" onclick="MyClick()">
+                <input type="reset" value="Apagar">
+            </fieldset>
+        </form>
+    </center>
+</body>
+</html>

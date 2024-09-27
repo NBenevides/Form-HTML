@@ -1,0 +1,14 @@
+#titulo{
+    font-size: 30px;
+    border: solid gray;
+    border-radius: 5px;
+    margin-top: 4%;
+    text-align: center;
+}
+
+#sep{
+    border-radius: 5px;
+    text-align: center;
+    width: 450px;
+    height: fit-content;
+}
