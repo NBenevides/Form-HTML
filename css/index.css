@@ -4,6 +4,7 @@
     border-radius: 5px;
     margin-top: 4%;
     text-align: center;
+    color: white;
 }
 
 #sep{
@@ -11,4 +12,29 @@
     text-align: center;
     width: 450px;
     height: fit-content;
+    background-image: url(../img/sasuke.jpg);
+    background-size: cover;
+    color: white;
+}
+
+body{
+    background-image: linear-gradient(purple, blue, red);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+     background-size: cover;
+}
+
+#nome{
+    background-color: indianred;
+    color: white;
+}
+
+#idade{
+    background-color: indianred;
+    color: white;
+}
+
+#genero{
+    background-color: indianred;
+    color: white;
 }

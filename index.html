@@ -10,16 +10,17 @@
         {
             let nome = document.getElementById("nome").value;
             let idade = document.getElementById("idade").value;
+            let genero = document.getElementById("genero").value;
             let msg = "";
             if (idade >= 18)
             {
-                msg = "Maior de Idade: " + idade;
+                msg = "maior de idade porque tem " + idade + " anos";
             }
             else
             {
-                msg = "Menor de Idade: " + idade;
+                msg = "menor de idade porque tem " + idade + " anos";
             }
-            alert("Seu nome é: " + nome + ". Mensagem: " + msg);
+            alert("Seu nome é " + nome + ". Você é " + msg + " e é do gênero " + genero);
         }
     </script>
 </head>
@@ -34,12 +35,22 @@
                 <legend>Identidades</legend>
                 <label for="nome">Nome</label>
                 <br>
-                <input type="text" id="nome" name="nome">
+                <input type="text" id="nome" name="nome" required>
                 <br>
                 <br>
                 <label for="idade">Idade</label>
                 <br>
-                <input type="number" id="idade" name="idade">
+                <input type="number" id="idade" name="idade" required>
+                <br>
+                <br>
+                <label for="genero">Gênero</label>
+                <br>
+                <input list="a" name="genero" id="genero" required>
+                <datalist id="a">
+                    <option value="Masculino">
+                    <option value="Feminino">
+                    <option value="Outros">
+                </datalist>
                 <br>
                 <br>
                 <input type="button" value="Enviar" onclick="MyClick()">
